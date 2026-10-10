@@ -48,7 +48,7 @@ function render() {
 }
 function authV() {
   const up = authTab === 'up';
-  return `<div class="auth"><h1 style="font-size:40px;color:var(--red)">BiteSite</h1><p class="b" style="margin:6px 0 16px">Order ahead, skip the queue.</p>
+  return `<div class="auth"><h1 style="font-size:40px;color:var(--red)">NS BiteSite</h1><p class="b" style="margin:6px 0 16px">Order ahead, skip the queue.</p>
   <div class="panel"><div class="row start"><button class="tab ${!up ? 'on' : ''}" data-a="tab" data-v="in">Sign in</button><button class="tab ${up ? 'on' : ''}" data-a="tab" data-v="up">Create account</button></div>
   ${up ? `<label>Full name</label><input id="n" maxlength="80"><label>Roll number</label><input id="r" maxlength="40" placeholder="e.g. CS-2024-001"><label>Department</label><input id="d" maxlength="40" placeholder="CSE"><label>Phone number</label><input id="p" inputmode="numeric" maxlength="10">` : ''}
   <label>Email</label><input id="e" type="email" autocomplete="username"><label>Password</label><input id="w" type="password" autocomplete="${up ? 'new-password' : 'current-password'}">
