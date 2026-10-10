@@ -56,7 +56,7 @@ function authV() {
 }
 function nav() {
   const t = me.role === 'admin' ? [['orders', 'Orders'], ['menuA', 'Menu'], ['settings', 'Settings']] : [['menu', 'Menu'], ['my', 'My Orders']];
-  return `<nav><span class="b" style="color:var(--red)">BiteSite</span>${t.map(([k, l]) => `<button class="tab ${view === k ? 'on' : ''}" data-a="view" data-v="${k}">${l}</button>`).join('')}<span class="sp"></span><span class="mut">${esc(me.name)}</span><button class="btn alt sm" data-a="logout">Logout</button></nav>`;
+  return `<nav><span class="b" style="color:var(--red)">Ns BiteSite</span>${t.map(([k, l]) => `<button class="tab ${view === k ? 'on' : ''}" data-a="view" data-v="${k}">${l}</button>`).join('')}<span class="sp"></span><span class="mut">${esc(me.name)}</span><button class="btn alt sm" data-a="logout">Logout</button></nav>`;
 }
 const fab = () => (me.role !== 'admin' && view === 'menu' && count()) ? `<div class="fab"><button class="btn" data-a="view" data-v="checkout">Cart · ${count()} items · ${money(total())} →</button></div>` : '';
 
