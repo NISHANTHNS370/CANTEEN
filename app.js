@@ -93,7 +93,7 @@ function authV(enter = '') {
 function topbar() {
   const items = me.role === 'admin' ? [['orders', 'Orders'], ['menuA', 'Manage Menu'], ['settings', 'Settings']] : [['menu', 'Menu'], ['my', 'My Orders']];
   items.push(['support', 'Support'], ['about', 'About']);
-  return `<header class="nav"><div class="nb"><span class="logo">🍛</span><span class="brand">BiteSite</span></div>
+  return `<header class="nav"><div class="nb"><span class="logo">𝐍𝐒⃝</span><span class="brand">BiteSite</span></div>
   <nav class="nl">${items.map(([k, l]) => `<button class="${view === k || (k === 'menu' && view === 'checkout') ? 'on' : ''}" data-a="go" data-v="${k}">${l}</button>`).join('')}</nav>
   <div class="nr"><span class="who">${esc(me.name)}</span><button class="btn alt sm" data-a="logout">Logout</button></div></header>`;
 }
@@ -161,9 +161,8 @@ function supportV() {
   return `<h2 style="margin-bottom:16px">Support</h2><div class="panel"><p>Need help with an order? Contact the canteen team.</p><div class="row start">${btns || '<span class="mut">Support contact not set yet. Admin can add it in Settings.</span>'}</div></div>
   <div class="panel"><h3 style="margin-bottom:8px">FAQ</h3>${faq.map(([a, b]) => `<details><summary>${esc(a)}</summary><p>${esc(b)}</p></details>`).join('')}</div>`;
 }
-const aboutV = () => `<h2 style="margin-bottom:16px">About BiteSite</h2><div class="panel"><p>BiteSite is a campus canteen ordering platform built by a student, for students. Pick your food, pay once and collect it the moment it is ready, no more standing in the queue.
-<pre><b><div class="ns">Coverd By 
-              𝓝𝐒 corporate🪷.</b>
+const aboutV = () => `<h2 style="margin-bottom:16px">About BiteSite</h2><div class="panel"><p>BiteSite is a JSEC Campus canteen ordering platform built by a student, for students. Pick your food, pay once and collect it the moment it is ready, no more standing in the queue.
+<pre><div class="ns">
   ‼️IMPORTANT‼️
   (づ ᴗ _ᴗ)づ   𝕆𝕟𝕝𝕪 𝔽𝕠𝕣 𝕁𝕒𝕪𝕒 𝕊𝕒𝕜𝕥𝕙𝕚 𝔼𝕟𝕘𝕚𝕟𝕖𝕖𝕣𝕚𝕟𝕘 𝕊𝕥𝕦𝕕𝕖𝕟𝕥'𝕤 (𝔽𝕒𝕤𝕥 𝔻𝕖𝕝𝕚𝕧𝕖𝕣𝕪)   ≽(◉˕ ◉ ≼マ
 </pre></div>
@@ -173,12 +172,15 @@ const aboutV = () => `<h2 style="margin-bottom:16px">About BiteSite</h2><div cla
   <hr>
   <pre><div class="ns">
   🔨<B>𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑'𝐒</B>🔨
- ᭪༊ 𝗙-𝗘-𝗗 𝗮𝗻𝗱 𝗗𝗲𝘀𝗶𝗴𝗻 : 𝓑𝓪𝓻𝓴𝓪𝓿𝓲 𝓚
- 🖧 𝗕-𝗘-𝗗 𝗡𝗲𝘁𝘄𝗼𝗿𝗸𝗶𝗻𝗴 : 𝓚𝓲𝓼𝓱𝓸𝓻𝓮 𝓢
+ 📜 𝙵-𝙴-𝙳 𝚊𝚗𝚍 𝙳𝚎𝚜𝚒𝚐𝚗𝚎𝚛 : 𝓑𝓪𝓻𝓴𝓪𝓿𝓲 𝓚
+ 📶 𝙱-𝙴-𝙳 𝙽𝚎𝚝𝚠𝚘𝚛𝚔𝚒𝚗𝚐 : 𝓚𝓲𝓼𝓱𝓸𝓻𝓮 𝓢
   
  𝐅𝐨𝐮𝐧𝐝𝐞𝐫 𝐀𝐧𝐝 𝐂𝐄𝐎 : 𝓝𝓲𝓼𝓱𝓪𝓷𝓽𝓱 (𝓝𝓼)
   🅾 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 ★ : <b><a href="https://www.instagram.com/error___ns">𝗘𝗥𝗥𝗢𝗥_𝗡𝗦</a></b>
-  </pre></div>
+
+  Coverd By 
+              𝓝𝐒 corporate🪷.</b>
+</pre>  </div>
   </p></div>`;
 
 /* ---------- actions ---------- */
