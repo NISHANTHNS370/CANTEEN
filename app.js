@@ -81,8 +81,8 @@ function body() {
 }
 function authV(enter = '') {
   const up = authTab === 'up';
-  return `<div class="authwrap${enter}"><section class="authhero"><div class="brandrow"><span class="logo">🍛</span><span class="brand">BiteSite</span></div>
-  <h1>Good food.<br>Zero waiting.</h1><p>Order ahead from your campus canteen, pay once and collect the moment it is ready.</p>
+  return `<div class="authwrap${enter}"><section class="authhero"><div class="brandrow"><span class="logo">🍛𝐍𝐒⃝</span><span class="brand">BiteSite</span></div>
+  <h1>Good food.<br>Zero waiting.</h1><p>Order ahead from your campus canteen, pay once and collect the moment it is ready.<br>⚡𝔻𝕖𝕡𝕒𝕣𝕥𝕞𝕖𝕟𝕥 𝕆𝕗 ℂ𝕪𝕓𝕖𝕣 𝕊𝕖𝕔𝕦𝕣𝕚𝕥𝕪⚡<br></p>
   <ul><li>Browse the full menu with photos</li><li>Pay by cash or UPI</li><li>Track your order live</li></ul></section>
   <section class="authform"><div class="panel"><h2 style="margin-bottom:4px">${up ? 'Create your account' : 'Welcome back'}</h2><p class="mut" style="margin:0 0 14px">${up ? 'Join your campus food community.' : 'Sign in to continue.'}</p>
   <div class="row start" style="margin-bottom:12px"><button class="tab ${!up ? 'on' : ''}" data-a="tab" data-v="in">Sign in</button><button class="tab ${up ? 'on' : ''}" data-a="tab" data-v="up">Create account</button></div>
@@ -162,25 +162,26 @@ function supportV() {
   <div class="panel"><h3 style="margin-bottom:8px">FAQ</h3>${faq.map(([a, b]) => `<details><summary>${esc(a)}</summary><p>${esc(b)}</p></details>`).join('')}</div>`;
 }
 const aboutV = () => `<h2 style="margin-bottom:16px">About BiteSite</h2><div class="panel"><p>BiteSite is a JSEC Campus canteen ordering platform built by a student, for students. Pick your food, pay once and collect it the moment it is ready, no more standing in the queue.
-<pre><div class="ns">
+<pre>
   ‼️IMPORTANT‼️
-  (づ ᴗ _ᴗ)づ   𝕆𝕟𝕝𝕪 𝔽𝕠𝕣 𝕁𝕒𝕪𝕒 𝕊𝕒𝕜𝕥𝕙𝕚 𝔼𝕟𝕘𝕚𝕟𝕖𝕖𝕣𝕚𝕟𝕘 𝕊𝕥𝕦𝕕𝕖𝕟𝕥'𝕤 (𝔽𝕒𝕤𝕥 𝔻𝕖𝕝𝕚𝕧𝕖𝕣𝕪)   ≽(◉˕ ◉ ≼マ
-</pre></div>
+(づ ᴗ _ᴗ)づ  ONLY JSEC STUDENT'S  ≽(◉˕ ◉ ≼マ
+</pre>
 </p></div>
   <div class="panel"><h3 style="margin-bottom:8px">How it works</h3><p>1️⃣ Browse the menu and add items to your cart.𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃<br>2️⃣ Add a note if you want (less spicy, pickup time…)ᯓ.<br>3️⃣ Pay by cash or UPI (upload the screenshot).<br>4️⃣ The canteen accepts your order and you collect it.</p></div>
   <div class="panel"><h3 style="margin-bottom:8px">Your data</h3><p class="mut">Passwords are securely hashed. Payment screenshots are private and visible only to you and the canteen admin. 
   <hr>
-  <pre><div class="ns">
-  🔨<B>𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑'𝐒</B>🔨
- 📜 𝙵-𝙴-𝙳 𝚊𝚗𝚍 𝙳𝚎𝚜𝚒𝚐𝚗𝚎𝚛 : 𝓑𝓪𝓻𝓴𝓪𝓿𝓲 𝓚
- 📶 𝙱-𝙴-𝙳 𝙽𝚎𝚝𝚠𝚘𝚛𝚔𝚒𝚗𝚐 : 𝓚𝓲𝓼𝓱𝓸𝓻𝓮 𝓢
-  
- 𝐅𝐨𝐮𝐧𝐝𝐞𝐫 𝐀𝐧𝐝 𝐂𝐄𝐎 : 𝓝𝓲𝓼𝓱𝓪𝓷𝓽𝓱 (𝓝𝓼)
-  🅾 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 ★ : <b><a href="https://www.instagram.com/error___ns">𝗘𝗥𝗥𝗢𝗥_𝗡𝗦</a></b>
+  <pre>
+🔨<B>𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑'𝐒</B>🔨
 
+ 📜 𝙵-𝙴-𝙳 𝚊𝚗𝚍 𝙳𝚎𝚜𝚒𝚐𝚗𝚎𝚛 : 𝐁𝐚𝐫𝐤𝐚𝐯𝐢 𝐤
+ 📶 𝙱-𝙴-𝙳 𝙽𝚎𝚝𝚠𝚘𝚛𝚔𝚒𝚗𝚐   : 𝐊𝐢𝐬𝐡𝐨𝐫𝐞 𝐒
+  
+ 𝐅𝐨𝐮𝐧𝐝𝐞𝐫 𝐀𝐧𝐝 𝐂𝐄𝐎 : 𝐍𝐢𝐬𝐡𝐚𝐧𝐭𝐡 𝐀 (𝙉𝙨)
+  🅾 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 ★ : <b><a href="https://www.instagram.com/error___ns">𝗘𝗥𝗥𝗢𝗥_𝗡𝗦</a></b>
+  
   Coverd By 
-              𝓝𝐒 corporate🪷.</b>
-</pre>  </div>
+       𝓝𝐒 corporate🪷.</b>
+</pre>
   </p></div>`;
 
 /* ---------- actions ---------- */
