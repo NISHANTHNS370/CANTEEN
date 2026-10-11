@@ -82,7 +82,7 @@ function body() {
 function authV(enter = '') {
   const up = authTab === 'up';
   return `<div class="authwrap${enter}"><section class="authhero"><div class="brandrow"><span class="logo">🍛𝐍𝐒⃝</span><span class="brand">BiteSite</span></div>
-  <h1>Good food <pre>ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧</pre>.<br>Zero waiting.</h1><p>Order ahead from your JSEC campus canteen, pay once and collect the moment it is ready.<br>⚡𝔻𝕖𝕡𝕒𝕣𝕥𝕞𝕖𝕟𝕥 𝕆𝕗 ℂ𝕪𝕓𝕖𝕣 𝕊𝕖𝕔𝕦𝕣𝕚𝕥𝕪⚡<br></p>
+  <h1>Good food♨.<br>Zero waiting.</h1><p>Order ahead from your JSEC campus canteen, pay once and collect the moment it is ready.<br>⚡𝔻𝕖𝕡𝕒𝕣𝕥𝕞𝕖𝕟𝕥 𝕆𝕗 ℂ𝕪𝕓𝕖𝕣 𝕊𝕖𝕔𝕦𝕣𝕚𝕥𝕪⚡<br></p>
   <ul><li>Browse the full menu with photos</li><li>Pay by cash or UPI</li><li>Track your order live ﹏𓊝﹏𓂁﹏</li></ul></section>
   <section class="authform"><div class="panel"><h2 style="margin-bottom:4px">${up ? 'Create your account' : 'Welcome back'}</h2><p class="mut" style="margin:0 0 14px">${up ? 'Join your campus food community.' : 'Sign in to continue.'}</p>
   <div class="row start" style="margin-bottom:12px"><button class="tab ${!up ? 'on' : ''}" data-a="tab" data-v="in">Sign in</button><button class="tab ${up ? 'on' : ''}" data-a="tab" data-v="up">Create account</button></div>
