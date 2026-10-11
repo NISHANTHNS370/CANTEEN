@@ -161,7 +161,10 @@ function supportV() {
   return `<h2 style="margin-bottom:16px">Support</h2><div class="panel"><p>Need help with an order? Contact the canteen team.</p><div class="row start">${btns || '<span class="mut">Support contact not set yet. Admin can add it in Settings.</span>'}</div></div>
   <div class="panel"><h3 style="margin-bottom:8px">FAQ</h3>${faq.map(([a, b]) => `<details><summary>${esc(a)}</summary><p>${esc(b)}</p></details>`).join('')}</div>`;
 }
-const aboutV = () => `<h2 style="margin-bottom:16px">About BiteSite</h2><div class="panel"><p>BiteSite is a campus canteen ordering platform built by a student, for students. Pick your food, pay once and collect it the moment it is ready, no more standing in the queue.</p></div>
+const aboutV = () => `<h2 style="margin-bottom:16px">About BiteSite</h2><div class="panel"><p>BiteSite is a campus canteen ordering platform built by a student, for students. Pick your food, pay once and collect it the moment it is ready, no more standing in the queue.
+Coverd By 
+     Ns Croprate.
+</p></div>
   <div class="panel"><h3 style="margin-bottom:8px">How it works</h3><p>1️⃣ Browse the menu and add items to your cart.<br>2️⃣ Add a note if you want (less spicy, pickup time…).<br>3️⃣ Pay by cash or UPI (upload the screenshot).<br>4️⃣ The canteen accepts your order and you collect it.</p></div>
   <div class="panel"><h3 style="margin-bottom:8px">Your data</h3><p class="mut">Passwords are securely hashed. Payment screenshots are private and visible only to you and the canteen admin.</p></div>`;
 
