@@ -39,11 +39,6 @@ main{max-width:1120px;margin:auto;padding:24px 20px 90px}
 /*Ns Shad*/
 .os:hover {
   color: #d9b3ff;
-  text-shadow:
-    0 0 5px #b26bff,
-    0 0 10px #b26bff,
-    0 0 20px #b26bff,
-    0 0 40px #b26bff;
 }
 /* hero */
 .hero{position:relative;overflow:hidden;border-radius:22px;padding:44px 40px;margin-bottom:22px;color:#fff;background:linear-gradient(135deg,#2b1d16,#6a2c20 70%,#8a3a28)}
