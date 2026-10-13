@@ -193,12 +193,11 @@ const aboutV = () => `<h2 style="margin-bottom:16px">About </h2><div class="pane
  🛠 𝙳𝚊𝚝𝚊𝚋𝚊𝚜𝚎 𝙼𝚊𝚗𝚊𝚐𝚎𝚛        : 𝐍𝐢𝐬𝐡𝐚𝐧𝐭𝐡 𝐀
  🪽 𝚂𝚞𝚙𝚙𝚘𝚛𝚝𝚒𝚗𝚐 𝙲𝚘𝚖𝚖𝚞𝚗𝚒𝚝𝚢   : 𝐘𝐮𝐰𝐚𝐬𝐡𝐫𝐞𝐞 𝐊
  🔗 𝙶.𝙷𝚘𝚜𝚝𝚊𝚕 𝙲𝚘𝚕𝚕𝚊𝚋𝚘𝚛𝚊𝚝𝚒𝚘𝚗 : 𝗦𝗶𝘃𝗮𝗿𝗮𝗻𝗷𝗮𝗻𝗶
-<hr><h3 align="center">𝗢𝗻𝗲 𝗠𝗮𝗻 𝗛𝗲𝗮𝗱 : 𝐍𝐢𝐬𝐡𝐚𝐧𝐭𝐡 𝐀 𝐍𝐒⃝</h3>
- </b>
-</pre><br><br>
+<hr><h3 align="center">𝗢𝗻𝗲 𝗠𝗮𝗻 𝗛𝗲𝗮𝗱 : 𝐍𝐢𝐬𝐡𝐚𝐧𝐭𝐡 𝐀 𝐍𝐒⃝</h3></b>
+</pre>
   </p></div>  <h4 align="center">
   <pre> Coverd By 
-             𝙉𝐒 𝐜𝐨𝐫𝐩𝐨𝐫𝐚𝐭𝐞🪷.</pre></h4>
+             𝙉𝐒 𝐜𝐨𝐫𝐩𝐨𝐫𝐚𝐭𝐞🪷</pre></h4>
              `;
 
 /* ---------- actions ---------- */
