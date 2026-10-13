@@ -81,8 +81,8 @@ function body() {
 }
 function authV(enter = '') {
   const up = authTab === 'up';
-  return `<div class="authwrap${enter}"><section class="authhero"><div class="brandrow"><span class="logo">🍛𝐍𝐒⃝</span><span class="brand">BiteSite</span></div>
-  <h1>Good food♨.<br>Zero waiting.</h1><p>Order ahead from your JSEC campus canteen, pay once and collect the moment it is ready.<br>⚡𝔻𝕖𝕡𝕒𝕣𝕥𝕞𝕖𝕟𝕥 𝕆𝕗 ℂ𝕪𝕓𝕖𝕣 𝕊𝕖𝕔𝕦𝕣𝕚𝕥𝕪⚡<br></p>
+  return `<div class="authwrap${enter}"><section class="authhero"><div class="brandrow"><span class="logo">🍛𝐉𝐒⃝𝐄𝐂</span><span class="brand">Bite The Site</span></div>
+  <h1>Student's canteen♨.<br>Fast Delivery.</h1><p>Order ahead from your JSEC campus canteen, pay once and collect the moment it is ready.<br>⚡𝔻𝕖𝕡𝕒𝕣𝕥𝕞𝕖𝕟𝕥 𝕆𝕗 ℂ𝕪𝕓𝕖𝕣 𝕊𝕖𝕔𝕦𝕣𝕚𝕥𝕪⚡<br></p>
   <ul><li>Browse the full menu with photos</li><li>Pay by cash or UPI</li><li>Track your order live ﹏𓊝﹏𓂁﹏</li></ul></section>
   <section class="authform"><div class="panel"><h2 style="margin-bottom:4px">${up ? 'Create your account' : 'Welcome back'}</h2><p class="mut" style="margin:0 0 14px">${up ? 'Join your campus food community.' : 'Sign in to continue.'}</p>
   <div class="row start" style="margin-bottom:12px"><button class="tab ${!up ? 'on' : ''}" data-a="tab" data-v="in">Sign in</button><button class="tab ${up ? 'on' : ''}" data-a="tab" data-v="up">Create account</button></div>
@@ -93,7 +93,7 @@ function authV(enter = '') {
 function topbar() {
   const items = me.role === 'admin' ? [['orders', 'Orders'], ['menuA', 'Manage Menu'], ['settings', 'Settings']] : [['menu', 'Menu'], ['my', 'My Orders']];
   items.push(['support', 'Support'], ['about', 'About']);
-  return `<header class="nav"><div class="nb"><span class="logo">𝐍𝐒⃝</span><span class="brand">BiteSite</span></div>
+  return `<header class="nav"><div class="nb"><span class="logo">𝐉𝐒⃝𝐄𝐂</span><span class="brand">BiteTheSite</span></div>
   <nav class="nl">${items.map(([k, l]) => `<button class="${view === k || (k === 'menu' && view === 'checkout') ? 'on' : ''}" data-a="go" data-v="${k}">${l}</button>`).join('')}</nav>
   <div class="nr"><span class="who">${esc(me.name)}</span><button class="btn alt sm" data-a="logout">Logout</button></div></header>`;
 }
@@ -107,7 +107,7 @@ function gridV() {
   ${cart[m.id] ? `<div class="q"><button data-a="chg" data-id="${m.id}" data-d="-1">−</button><span>${cart[m.id]}</span><button data-a="chg" data-id="${m.id}" data-d="1">+</button></div>` : `<button class="btn" data-a="chg" data-id="${m.id}" data-d="1">+ Add</button>`}</div></div>`).join('') || '<p class="mut">No items found.</p>';
 }
 function menuV() {
-  return `<section class="hero"><p class="eyebrow">Welcome back, ${esc(me.name.split(' ')[0])}</p><h1>What are you craving today?</h1><p class="sub">Fresh from the canteen kitchen. Order ahead and collect it when it is ready.</p>
+  return `<section class="hero"><p class="eyebrow">Welcome back, ${esc(me.name.split(' ')[0])}</p><h1>What are you craving today?</h1><p class="sub">WelCome o our Student Canteen... Fresh from the canteen kitchen. Order ahead and collect it when it is ready. </p>
   <div class="hstats"><span>Skip the queue</span><span>Cash or UPI</span><span>Live order status</span></div></section>
   <input id="search" data-in="search" placeholder="Search delicious food…" value="${esc(q)}">
   <div class="chips">${cats().map(c => `<button class="chip ${c === cat ? 'on' : ''}" data-a="cat" data-v="${esc(c)}">${esc(c)}</button>`).join('')}</div><div class="grid" id="grid">${gridV()}</div>`;
@@ -161,26 +161,32 @@ function supportV() {
   return `<h2 style="margin-bottom:16px">Support</h2><div class="panel"><p>Need help with an order? Contact the canteen team.</p><div class="row start">${btns || '<span class="mut">Support contact not set yet. Admin can add it in Settings.</span>'}</div></div>
   <div class="panel"><h3 style="margin-bottom:8px">FAQ</h3>${faq.map(([a, b]) => `<details><summary>${esc(a)}</summary><p>${esc(b)}</p></details>`).join('')}</div>`;
 }
-const aboutV = () => `<h2 style="margin-bottom:16px">About BiteSite</h2><div class="panel"><p>BiteSite is a JSEC Campus canteen ordering platform built by a student, for students. Pick your food, pay once and collect it the moment it is ready, no more standing in the queue.
+const aboutV = () => `<h2 style="margin-bottom:16px">About </h2><div class="panel"><p><b>Created by Student's</b><br>BiteSite is a JSEC Campus canteen ordering platform built by a student, for students. Pick your food, pay once and collect it the moment it is ready, no more standing in the queue.
 <pre>
   ‼️IMPORTANT‼️
-(づ ᴗ _ᴗ)づ  ONLY JSEC STUDENT'S  ≽(◉˕ ◉ ≼マ
+(づ ᴗ _ᴗ)づ        𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗢𝗡  
+ 🅾 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 ★ : <b><a href="https://www.instagram.com/student_canteen_jsec">𝗦𝗧𝗨𝗗𝗘𝗡𝗧_𝗖𝗔𝗡𝗧𝗘𝗘𝗡</a></b>
 </pre>
 </p></div>
-  <div class="panel"><h3 style="margin-bottom:8px">How it works</h3><p>1️⃣ Browse the menu and add items to your cart.𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃<br>2️⃣ Add a note if you want (less spicy, pickup time…)ᯓ.<br>3️⃣ Pay by cash or UPI (upload the screenshot).<br>4️⃣ The canteen accepts your order and you collect it.</p></div>
+  <div class="panel"><h3 style="margin-bottom:8px">How it works</h3><p>1️⃣ Browse the menu and add items to your cart.<br>2️⃣ Add a note if you want (less spicy, pickup time…)ᯓ.<br>3️⃣ Pay by cash or UPI (upload the screenshot).<br>4️⃣ The canteen accepts your order and you collect it.</p></div>
   <div class="panel"><h3 style="margin-bottom:8px">Your data</h3><p class="mut">Passwords are securely hashed. Payment screenshots are private and visible only to you and the canteen admin. 
   <hr>
   <pre>
 🔨<B>𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑'𝐒</B>🔨
 
- 📜 𝙵-𝙴-𝙳 𝚊𝚗𝚍 𝙳𝚎𝚜𝚒𝚐𝚗𝚎𝚛 : 𝐁𝐚𝐫𝐤𝐚𝐯𝐢 𝐤
- 📶 𝙱-𝙴-𝙳 𝙽𝚎𝚝𝚠𝚘𝚛𝚔𝚒𝚗𝚐   : 𝐊𝐢𝐬𝐡𝐨𝐫𝐞 𝐒
+ 📜 𝙵-𝙴-𝙳 𝚊𝚗𝚍 𝙳𝚎𝚜𝚒𝚐𝚗𝚎𝚛  : 𝐁𝐚𝐫𝐤𝐚𝐯𝐢 𝐤
+ 📶 𝙱-𝙴-𝙳 𝙽𝚎𝚝𝚠𝚘𝚛𝚔𝚒𝚗𝚐    : 𝐊𝐢𝐬𝐡𝐨𝐫𝐞 𝐒
+ 🦋 𝙸𝚗𝚏𝚕𝚞𝚎𝚗𝚌𝚎𝚛          : 𝗥𝗮𝘀𝗶𝗴𝗮𝗮𝗣𝗿𝗶𝘆𝗮 𝗕
+ 🪽 𝙿𝚛𝚘𝚖𝚘𝚝𝚒𝚗𝚐  𝙷𝚎𝚊𝚍     : 𝗣𝗼𝗼𝗿𝗮𝗻𝗶 𝗞
+ 💛 𝙲𝚘𝚍𝚎 𝙷𝚊𝚗𝚍𝚕𝚎𝚛        : 𝐇𝐞𝐦𝐚𝐥𝐚𝐭𝐡𝐚 𝐊
+ 💥 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚒𝚗𝚐 𝚖𝚊𝚗𝚊𝚐𝚎𝚛  : 𝗗𝗶𝗻𝗲𝘀𝗵 𝗕𝗮𝗯𝘂
+ 🪶 𝙿𝚛𝚘𝚍𝚞𝚌𝚎𝚛             : 𝐃𝐡𝐚𝐫𝐬𝐡𝐢𝐧𝐢 𝐒
+ 🌼 𝙽𝚎𝚝𝚠𝚘𝚛𝚔𝚒𝚗𝚐 𝙷𝚎𝚊𝚍     : 𝐇𝐚𝐫𝐢𝐧𝐢 𝐌
   
- 𝐅𝐨𝐮𝐧𝐝𝐞𝐫 𝐀𝐧𝐝 𝐂𝐄𝐎 : 𝐍𝐢𝐬𝐡𝐚𝐧𝐭𝐡 𝐀 (𝙉𝙨)
-  🅾 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 ★ : <b><a href="https://www.instagram.com/error___ns">𝗘𝗥𝗥𝗢𝗥_𝗡𝗦</a></b>
-  
+ 𝗢𝗻𝗲 𝗠𝗮𝗻 𝗛𝗲𝗮𝗱 : 𝐍𝐢𝐬𝐡𝐚𝐧𝐭𝐡 𝐀 𝐍𝐒⃝
+   
   Coverd By 
-       𝓝𝐒 corporate🪷.</b>
+       𝙉𝐒 corporate🪷.</b>
 </pre>
   </p></div>`;
 
