@@ -170,10 +170,11 @@ const aboutV = () => `<h2 style="margin-bottom:16px">About </h2><div class="pane
 </p></div>
   <div class="panel"><h3 style="margin-bottom:8px">How it works</h3><p>1️⃣ Browse the menu and add items to your cart.<br>2️⃣ Add a note if you want (less spicy, pickup time…)ᯓ.<br>3️⃣ Pay by cash or UPI (upload the screenshot).<br>4️⃣ The canteen accepts your order and you collect it.</p></div>
   <div class="panel"><h3 style="margin-bottom:8px">Your data</h3><p class="mut">Passwords are securely hashed. Payment screenshots are private and visible only to you and the canteen admin. 
-  <hr>
+
   <pre>
 🔨<B>𝐓𝐇𝐀𝐌𝐈𝐙𝐇 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑'𝐒</B>🔨
-
+  <hr><b>𝐃𝐞𝐩𝐚𝐫𝐭𝐦𝐞𝐧𝐭 𝐎𝐟 𝐂𝐒𝐄 - 𝐂𝐲𝐛𝐞𝐫 𝐒𝐞𝐜𝐮𝐫𝐢𝐭𝐲</b>
+  
  📜 𝙵-𝙴-𝙳 𝚊𝚗𝚍 𝙳𝚎𝚜𝚒𝚐𝚗𝚎𝚛  : 𝐁𝐚𝐫𝐤𝐚𝐯𝐢 𝐤
  📶 𝙱-𝙴-𝙳 𝙽𝚎𝚝𝚠𝚘𝚛𝚔𝚒𝚗𝚐    : 𝐊𝐢𝐬𝐡𝐨𝐫𝐞 𝐒
  🦋 𝙸𝚗𝚏𝚕𝚞𝚎𝚗𝚌𝚎𝚛          : 𝐑𝐚𝐬𝐢𝐠𝐚𝐚𝐏𝐫𝐢𝐲𝐚 𝐁
@@ -184,6 +185,7 @@ const aboutV = () => `<h2 style="margin-bottom:16px">About </h2><div class="pane
  🪶 𝙿𝚛𝚘𝚍𝚞𝚌𝚎𝚛             : 𝐃𝐡𝐚𝐫𝐬𝐡𝐢𝐧𝐢 𝐒
  💹 𝙰𝚌𝚌𝚘𝚞𝚗𝚝 𝙼𝚊𝚗𝚊𝚐𝚎𝚖𝚎𝚗𝚝  : 𝐏𝐨𝐨𝐣𝐚 𝐒
  🌼 𝙽𝚎𝚝𝚠𝚘𝚛𝚔𝚒𝚗𝚐 𝙷𝚎𝚊𝚍     : 𝐇𝐚𝐫𝐢𝐧𝐢 𝐌
+ 🌟 𝙶𝚒𝚛𝚕'𝚜 𝚃𝚎𝚊𝚖 𝙻𝚎𝚊𝚍𝚎𝚛  : 𝐀𝐲𝐞𝐬𝐡𝐚 𝐒𝐢𝐝𝐝𝐢𝐤𝐚 𝐑
  💵 𝚂𝚝𝚞𝚍𝚎𝚗𝚝 𝚂𝚙𝚘𝚗𝚜𝚘𝚛     : 𝗔𝗺𝗶𝗿𝘁𝗵 
  <hr>
  <b>𝐃𝐞𝐩𝐚𝐫𝐭𝐦𝐞𝐧𝐭 𝐎𝐟 𝐀𝐈-𝐃𝐒</b>
