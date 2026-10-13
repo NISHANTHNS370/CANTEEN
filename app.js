@@ -107,7 +107,7 @@ function gridV() {
   ${cart[m.id] ? `<div class="q"><button data-a="chg" data-id="${m.id}" data-d="-1">−</button><span>${cart[m.id]}</span><button data-a="chg" data-id="${m.id}" data-d="1">+</button></div>` : `<button class="btn" data-a="chg" data-id="${m.id}" data-d="1">+ Add</button>`}</div></div>`).join('') || '<p class="mut">No items found.</p>';
 }
 function menuV() {
-  return `<section class="hero"><p class="eyebrow">Welcome back, ${esc(me.name.split(' ')[0])}</p><h1>What are you craving today?</h1><p class="sub">WelCome o our Student Canteen... Fresh from the canteen kitchen. Order ahead and collect it when it is ready. </p>
+  return `<section class="hero"><p class="eyebrow">Welcome back, ${esc(me.name.split(' ')[0])}</p><h1>What are you craving today?</h1><p class="sub">WelCome our Student Canteen... Fresh from the canteen kitchen. Order ahead and collect it when it is ready. </p>
   <div class="hstats"><span>Skip the queue</span><span>Cash or UPI</span><span>Live order status</span></div></section>
   <input id="search" data-in="search" placeholder="Search delicious food…" value="${esc(q)}">
   <div class="chips">${cats().map(c => `<button class="chip ${c === cat ? 'on' : ''}" data-a="cat" data-v="${esc(c)}">${esc(c)}</button>`).join('')}</div><div class="grid" id="grid">${gridV()}</div>`;
@@ -116,7 +116,7 @@ function checkoutV() {
   const rows = Object.entries(cart).map(([id, n]) => { const m = menu.find(x => x.id === id); return m ? `<tr><td>${esc(m.name)}</td><td>${n}</td><td>${money(m.price * n)}</td></tr>` : ''; }).join('');
   if (!rows) return `<div class="panel">Cart is empty. <button class="btn sm" data-a="go" data-v="menu">Back to menu</button></div>`;
   return `<h2>Your cart</h2><div class="panel scroll"><table><tr><th>Item</th><th>Qty</th><th>Price</th></tr>${rows}<tr><td class="b">Total</td><td></td><td class="price">${money(total())}</td></tr></table></div>
-  <div class="panel"><label>Note for the canteen (optional)</label><textarea data-in="note" rows="2" maxlength="200" placeholder="e.g. less spicy, pack separately, pick-up at 1:10 PM">${esc(note)}</textarea>
+  <div class="panel"><label>Note for the canteen (optional)</label><textarea data-in="note" rows="2" maxlength="200" placeholder="e.g. Delivery Room No(208,303), pack separately, pick-up at 10:05 PM">${esc(note)}</textarea>
   <h3 style="margin:6px 0 10px">Payment method</h3><div class="row start"><button class="chip ${pay === 'Cash' ? 'on' : ''}" data-a="pay" data-v="Cash">Cash</button><button class="chip ${pay === 'Online' ? 'on' : ''}" data-a="pay" data-v="Online">Online (UPI)</button></div>
   ${pay === 'Online' ? `<p>Pay <b>${money(total())}</b> to:<br>UPI ID: <b>${esc(settings.upi || '(not set by admin yet)')}</b><br>Phone: <b>${esc(settings.phone || '-')}</b></p><label>Upload payment screenshot (required)</label><input type="file" accept="image/*" data-in="shot">${shotPrev ? `<img class="shot" src="${shotPrev}" alt="screenshot preview">` : ''}` : '<p class="mut">Pay cash when you collect your order.</p>'}
   <div class="msg">${esc(msg)}</div><div class="row start"><button class="btn alt" data-a="go" data-v="menu">← Back</button><button class="btn ok" data-a="place" ${busy ? 'disabled' : ''}>Place order</button></div></div>`;
