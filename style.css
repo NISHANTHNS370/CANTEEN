@@ -37,17 +37,14 @@ label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08
 .nr{margin-left:auto;display:flex;align-items:center;gap:14px}.who{font-size:13px;color:var(--mut)}
 main{max-width:1120px;margin:auto;padding:24px 20px 90px}
 /*Ns Shad*/
-.os {
-  color: #ff9800;
-  transition: 0.3s ease;
-}
 .os:hover {
+  color: #d9b3ff;
   text-shadow:
-    0 0 6px #ff9800,
-    0 0 12px #ff5722,
-    0 0 24px #ff3d00;
+    0 0 5px #b26bff,
+    0 0 10px #b26bff,
+    0 0 20px #b26bff,
+    0 0 40px #b26bff;
 }
-
 /* hero */
 .hero{position:relative;overflow:hidden;border-radius:22px;padding:44px 40px;margin-bottom:22px;color:#fff;background:linear-gradient(135deg,#2b1d16,#6a2c20 70%,#8a3a28)}
 .hero::after{content:"";position:absolute;top:0;bottom:0;width:35%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.09),transparent);animation:sheen 7s ease-in-out infinite}
