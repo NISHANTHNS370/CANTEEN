@@ -172,8 +172,7 @@ const aboutV = () => `<h2 style="margin-bottom:16px">About </h2><div class="pane
   <div class="panel"><h3 style="margin-bottom:8px">Your data</h3><p class="mut">Passwords are securely hashed. Payment screenshots are private and visible only to you and the canteen admin. 
 
   <pre>
-🔨<B>𝐓𝐇𝐀𝐌𝐈𝐙𝐇 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑'𝐒</B>🔨
-  <hr><b>𝐃𝐞𝐩𝐚𝐫𝐭𝐦𝐞𝐧𝐭 𝐎𝐟 𝐂𝐒𝐄 - 𝐂𝐲𝐛𝐞𝐫 𝐒𝐞𝐜𝐮𝐫𝐢𝐭𝐲</b>
+🔨<B>𝐓𝐇𝐀𝐌𝐈𝐙𝐇 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑'𝐒</B>🔨<hr><b>𝐃𝐞𝐩𝐚𝐫𝐭𝐦𝐞𝐧𝐭 𝐎𝐟 𝐂𝐒𝐄 - 𝐂𝐲𝐛𝐞𝐫 𝐒𝐞𝐜𝐮𝐫𝐢𝐭𝐲</b>
   
  📜 𝙵-𝙴-𝙳 𝚊𝚗𝚍 𝙳𝚎𝚜𝚒𝚐𝚗𝚎𝚛  : 𝐁𝐚𝐫𝐤𝐚𝐯𝐢 𝐤
  📶 𝙱-𝙴-𝙳 𝙽𝚎𝚝𝚠𝚘𝚛𝚔𝚒𝚗𝚐    : 𝐊𝐢𝐬𝐡𝐨𝐫𝐞 𝐒
