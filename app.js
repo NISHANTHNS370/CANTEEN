@@ -196,10 +196,12 @@ const aboutV = () => `<h2 style="margin-bottom:16px">About </h2><div class="pane
 <hr>
  <h3 align="center">𝗢𝗻𝗲 𝗠𝗮𝗻 𝗛𝗲𝗮𝗱 : 𝐍𝐢𝐬𝐡𝐚𝐧𝐭𝐡 𝐀 𝐍𝐒⃝</h3>
 <hr>
-  Coverd By 
-       𝙉𝐒 𝐜𝐨𝐫𝐩𝐨𝐫𝐚𝐭𝐞🪷.</b>
+ 🪷.</b>
 </pre>
-  </p></div>`;
+  </p></div>
+  <h6 align="center">
+  <pre> Coverd By 
+             𝙉𝐒 𝐜𝐨𝐫𝐩𝐨𝐫𝐚𝐭𝐞</pre></h6>`;
 
 /* ---------- actions ---------- */
 function compress(f, maxW, cb) {
