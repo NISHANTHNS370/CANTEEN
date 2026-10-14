@@ -161,7 +161,7 @@ function supportV() {
   return `<h2 style="margin-bottom:16px">Support</h2><div class="panel"><p>Need help with an order? Contact the canteen team.</p><div class="row start">${btns || '<span class="mut">Support contact not set yet. Admin can add it in Settings.</span>'}</div></div>
   <div class="panel"><h3 style="margin-bottom:8px">FAQ</h3>${faq.map(([a, b]) => `<details><summary>${esc(a)}</summary><p>${esc(b)}</p></details>`).join('')}</div>`;
 }
-const aboutV = () => `<h2 style="margin-bottom:16px">About </h2><div class="panel"><p><b>Created by Student's</b><br>BiteSite is a JSEC Campus canteen ordering platform built by a student, for students. Pick your food, pay once and collect it the moment it is ready, no more standing in the queue.
+const aboutV = () => `<h2 style="margin-bottom:16px">About </h2><div class="panel"><p><b>Created by Student's</b><br>BiteSite is a JSEC Student canteen ordering platform built by a student, for students. Pick your food, pay once and collect it the moment it is ready, no more standing in the queue.
 <pre>
   ‼️IMPORTANT‼️
 (づ ᴗ _ᴗ)づ        𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗢𝗡  
@@ -175,18 +175,18 @@ const aboutV = () => `<h2 style="margin-bottom:16px">About </h2><div class="pane
 🔨<B>𝐓𝐇𝐀𝐌𝐈𝐙𝐇 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑'𝐒</B>🔨<hr>
 <b>𝐃𝐞𝐩𝐚𝐫𝐭𝐦𝐞𝐧𝐭 𝐎𝐟 𝐂𝐒𝐄 - 𝐂𝐲𝐛𝐞𝐫 𝐒𝐞𝐜𝐮𝐫𝐢𝐭𝐲</b>
   
+ 🛡️ 𝙳𝚎𝚏𝚎𝚗𝚌𝚎 𝙼𝚊𝚗𝚊𝚐𝚎𝚛     : 𝐊𝐞𝐧𝐧𝐲 𝐈
  📜 𝙵-𝙴-𝙳 𝚊𝚗𝚍 𝙳𝚎𝚜𝚒𝚐𝚗𝚎𝚛  : 𝐁𝐚𝐫𝐤𝐚𝐯𝐢 𝐤
  📶 𝙱-𝙴-𝙳 𝙽𝚎𝚝𝚠𝚘𝚛𝚔𝚒𝚗𝚐    : 𝐊𝐢𝐬𝐡𝐨𝐫𝐞 𝐒
  🦋 𝙸𝚗𝚏𝚕𝚞𝚎𝚗𝚌𝚎𝚛          : 𝐑𝐚𝐬𝐢𝐠𝐚𝐚𝐏𝐫𝐢𝐲𝐚 𝐁
  💜 𝙿𝚛𝚘𝚖𝚘𝚝𝚒𝚗𝚐  𝙷𝚎𝚊𝚍     : 𝐏𝐨𝐨𝐫𝐚𝐧𝐢 𝐊
  💛 𝙲𝚘𝚍𝚎 𝙷𝚊𝚗𝚍𝚕𝚎𝚛        : 𝐇𝐞𝐦𝐚𝐥𝐚𝐭𝐡𝐚 𝐊
- 🛡️ 𝙳𝚎𝚏𝚎𝚗𝚌𝚎 𝙼𝚊𝚗𝚊𝚐𝚎𝚛     : 𝐊𝐞𝐧𝐧𝐲 𝐈
  💥 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚒𝚗𝚐 𝚖𝚊𝚗𝚊𝚐𝚎𝚛  : 𝐃𝐢𝐧𝐞𝐬𝐡 𝐁𝐚𝐛𝐮
- 🪶 𝙿𝚛𝚘𝚍𝚞𝚌𝚎𝚛             : 𝐃𝐡𝐚𝐫𝐬𝐡𝐢𝐧𝐢 𝐒
+ 🪶 𝙿𝚛𝚘𝚍𝚞𝚌𝚎𝚛            : 𝐃𝐡𝐚𝐫𝐬𝐡𝐢𝐧𝐢 𝐒
  💹 𝙰𝚌𝚌𝚘𝚞𝚗𝚝 𝙼𝚊𝚗𝚊𝚐𝚎𝚖𝚎𝚗𝚝  : 𝐏𝐨𝐨𝐣𝐚 𝐒
  🌼 𝙽𝚎𝚝𝚠𝚘𝚛𝚔𝚒𝚗𝚐 𝙷𝚎𝚊𝚍     : 𝐇𝐚𝐫𝐢𝐧𝐢 𝐌
  🌟 𝙶𝚒𝚛𝚕'𝚜 𝚃𝚎𝚊𝚖 𝙻𝚎𝚊𝚍𝚎𝚛  : 𝐀𝐲𝐞𝐬𝐡𝐚 𝐒𝐢𝐝𝐝𝐢𝐤𝐚 𝐑
- 💵 𝚂𝚝𝚞𝚍𝚎𝚗𝚝 𝚂𝚙𝚘𝚗𝚜𝚘𝚛     : 𝗔𝗺𝗶𝗿𝘁𝗵 
+ 💵 𝚂𝚝𝚞𝚍𝚎𝚗𝚝 𝚂𝚙𝚘𝚗𝚜𝚘𝚛     : 𝐀𝐦𝐢𝐫𝐭𝐡 
  <hr>
  <b>𝐃𝐞𝐩𝐚𝐫𝐭𝐦𝐞𝐧𝐭 𝐎𝐟 𝐀𝐈-𝐃𝐒</b>
  
@@ -196,6 +196,8 @@ const aboutV = () => `<h2 style="margin-bottom:16px">About </h2><div class="pane
  🪽 𝚂𝚞𝚙𝚙𝚘𝚛𝚝𝚒𝚗𝚐 𝙲𝚘𝚖𝚖𝚞𝚗𝚒𝚝𝚢   : 𝐘𝐮𝐰𝐚𝐬𝐡𝐫𝐞𝐞 𝐊
  🔗 𝙶.𝙷𝚘𝚜𝚝𝚊𝚕 𝙲𝚘𝚕𝚕𝚊𝚋𝚘𝚛𝚊𝚝𝚒𝚘𝚗 : 𝐒𝐢𝐯𝐚𝐫𝐚𝐧𝐣𝐚𝐧𝐢<br><br><br>
 <hr><h3 align="center">𝗢𝗻𝗲 𝗠𝗮𝗻 𝗛𝗲𝗮𝗱 𝐍𝐒⃝</h3></b><hr>
+
+𝗔𝗽𝗽𝗿𝗼𝘃𝗲𝗱 𝗯𝘆 : 𝐌𝐫𝐬.𝐃.𝐑𝐮𝐩𝐚𝐬𝐫𝐢
 </pre>
   </p></div>  <h4 align="center">
   <pre> 𝘾𝙤𝙫𝙚𝙧𝙚𝙙 𝙗𝙮 
