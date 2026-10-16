@@ -108,7 +108,7 @@ function gridV() {
 }
 function menuV() {
   return `<section class="hero"><p class="eyebrow">Welcome back, ${esc(me.name.split(' ')[0])}</p><h1>What are you craving today?</h1><p class="sub">WelCome our Student Canteen... Fresh from the canteen kitchen. Order ahead and collect it when it is ready. </p>
-  <div class="hstats"><span>Skip the queue</span><span>Cash or UPI</span><span>Live order status</span></div></section>
+  <div class="hstats"><span><marquee>Skip the queue</span><span>Cash or UPI</span><span>Live order status</marquee></span></div></section>
   <input id="search" data-in="search" placeholder="Search delicious food…" value="${esc(q)}">
   <div class="chips">${cats().map(c => `<button class="chip ${c === cat ? 'on' : ''}" data-a="cat" data-v="${esc(c)}">${esc(c)}</button>`).join('')}</div><div class="grid" id="grid">${gridV()}</div>`;
 }
