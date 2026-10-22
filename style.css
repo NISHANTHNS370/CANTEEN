@@ -1,4 +1,4 @@
-/*
+
 :root{--bg:#faf6ef;--card:#fff;--ink:#1f1a17;--red:#b3261e;--yel:#c9a24b;--mut:#7a6f66;--tile:#f1eadb;--line:#e4dccb;color-scheme:light}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
@@ -7,7 +7,7 @@ h2{font-size:28px}h3{font-size:19px}
 button,input,select,textarea{font:inherit;color:inherit}
 #app{position:relative;z-index:1}
 
-/* soft animated backdrop *
+/* soft animated backdrop */
 #bg{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
 #bg i{position:absolute;border-radius:50%;filter:blur(80px);opacity:.5;animation:drift 24s ease-in-out infinite alternate}
 #bg i:nth-child(1){width:440px;height:440px;background:#f5cfae;top:-140px;left:-100px}
