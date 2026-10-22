@@ -1,4 +1,4 @@
-hugfdsfghjkjgc
+/*
 :root{--bg:#faf6ef;--card:#fff;--ink:#1f1a17;--red:#b3261e;--yel:#c9a24b;--mut:#7a6f66;--tile:#f1eadb;--line:#e4dccb;color-scheme:light}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
@@ -7,7 +7,7 @@ h2{font-size:28px}h3{font-size:19px}
 button,input,select,textarea{font:inherit;color:inherit}
 #app{position:relative;z-index:1}
 
-/* soft animated backdrop */
+/* soft animated backdrop *
 #bg{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
 #bg i{position:absolute;border-radius:50%;filter:blur(80px);opacity:.5;animation:drift 24s ease-in-out infinite alternate}
 #bg i:nth-child(1){width:440px;height:440px;background:#f5cfae;top:-140px;left:-100px}
@@ -76,7 +76,7 @@ main{max-width:1120px;margin:auto;padding:24px 20px 90px}
 .q button{border:0;background:#f6efe0;width:32px;height:32px;font-weight:700;cursor:pointer}.q button:hover{background:var(--yel);color:#fff}.q span{min-width:32px;text-align:center;font-weight:600}
 .fab{position:fixed;right:22px;bottom:22px;z-index:6;animation:fadeUp .4s both}.fab .btn{padding:14px 24px;border-radius:999px}
 
-/* misc */
+/* misc 
 .row{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}.start{justify-content:flex-start}
 .tag{display:inline-block;padding:4px 12px;border-radius:999px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
 .Pending{background:#fdf1d3;color:#8a6100}.Accepted{background:#dff3e6;color:#1d6b3a}.Rejected{background:#fbe1de;color:#9d1d15}
