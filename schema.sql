@@ -1,5 +1,5 @@
 nvk jg lkjbkjblkjbkkjbkjbjbjh  bj bjhbj 
-
+lihihhhkhkhl
 
 -- BiteSite schema. Run once in Supabase > SQL Editor.
 create table public.profiles(
