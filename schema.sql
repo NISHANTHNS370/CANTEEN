@@ -1,4 +1,4 @@
-nvk jg lkjbkjblkjbkkjbkjbjbjh  bj bjhbj 
+nvk jg lkjbkjblkjbkkjbkjbjbjh  bj bjhbj uyfrytfys
 lihihhhkhkhl
 jfytfhffhfhfhgfghfhffhgfgfhgfhgfhhytfytfyftyfyh
 -- BiteSite schema. Run once in Supabase > SQL Editor.
