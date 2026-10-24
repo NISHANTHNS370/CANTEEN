@@ -1,6 +1,6 @@
 nvk jg lkjbkjblkjbkkjbkjbjbjh  bj bjhbj uyfrytfys
 lihihhhkhkhlhgfthfhgnfhjuyt7utyutututgi
-jfytfhffhfhfhgfghfhffhgfgfhgfhgfhhytfytfyftyfyh
+jfytfhffhfhfhgfghfhffhgfgfhgfhgfhhytfytfyftyfyh chnfgh dzdfhndf rdzss es sz zsrhs h sh   h 
 -- BiteSite schema. Run once in Supabase > SQL Editor.
 create table public.profiles(
   id uuid primary key references auth.users on delete cascade,
