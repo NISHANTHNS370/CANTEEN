@@ -1,5 +1,22 @@
-nvk jg lkjbkjblkjbkkjbkjbjbjh  bj bjhbj uyfrytfys
-lihihhhkhkhlhgfthfhgnfhjuyt7utyutututgi
+hd nvk jg lkjbkjblkjbkkjbkjbjbjh  bj bjhbj uyfrytfysdfh  d zdh   
+
+
+sdgdfd 
+d jd
+
+ d
+h dhf
+
+
+
+
+
+
+
+
+
+
+  
 jfytfhffhfhfhgfghfhffhgfgfhgfhgfhhytfytfyftyfyh chnfgh dzdfhndf rdzss es sz zsrhs h sh   h 
 -- BiteSite schema. Run once in Supabase > SQL Editor.
 create table public.profiles(
